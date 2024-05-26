@@ -1,0 +1,41 @@
+.feature-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .feature-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .feature-card {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 8px;
+    width: 200px; /* Adjust the width as needed */
+    /* background-color: #000034; */
+    /* background-image: url('/public/page.png'); 
+    background-size: cover; */
+    box-shadow: 2px 2px 8px black;
+  }
+  
+  .feature-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    /* background-color: #0303cd; */
+    background-image: url('/public/page.png'); 
+    background-size: cover;
+  }
+
+  .feature-card p{
+    /* color:white; */
+    font-size: 1.2em;
+  }
+  

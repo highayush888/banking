@@ -1,0 +1,43 @@
+/* ShineCard.css */
+
+.shinecard {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    overflow: hidden; /* Ensures the shine effect stays within the card */
+  }
+  
+  .shinecard .shine-effect {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border: 3px solid transparent;
+    border-radius: 16px;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8); /* Glowing outline effect */
+    animation: shineMove 4s linear infinite alternate-reverse, slowmotion2 2s ease-in-out infinite alternate-reverse;
+  }
+  
+  @keyframes shineMove {
+    0% {
+      path: path('M100,100m-50,0a50,50 0 1,0 100,0a50,50 0 1,0 -100,0');
+    }
+    100% {
+      path: path('M100,100m50,0a50,50 0 1,0 -100,0a50,50 0 1,0 100,0');
+    }
+  }
+  
+  @keyframes slowmotion2 {
+    0% {
+      transform: translateY(-3px);
+    }
+    100% {
+      transform: translateY(3px);
+    }
+  }
+  

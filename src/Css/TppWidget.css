@@ -1,0 +1,24 @@
+/* Your existing CSS for .tpp_widget */
+.tpp_widget {
+    background: white;
+    box-shadow: 6px 6px 70px #104e513b;
+    padding: 20px 10px;
+    height: 146px;
+    border-radius: 15px;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: 0.3s ease;
+    transition: background-color 4s ease;
+  }
+  
+  .tpp_widget:hover {
+    background-color: #0066ff; /* Your desired hover background color */
+    background-color: 0.3s ease;
+    /* background-color: inherit; */
+  }
+  

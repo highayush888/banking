@@ -1,0 +1,131 @@
+/* Cardrs2.css */
+
+.cardrs3-container {
+    max-width: 100%;
+    margin: 40px;
+    
+}
+  
+.cardrs3-container h2 {
+    /* font-size: 3em; */
+}
+  
+.cardrs3-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+
+/* Animation for Border starts here */
+@keyframes borderAnimation {
+    0% {
+        border-color: green;
+    }
+    50% {
+        border-color: red;
+    }
+    100% {
+        border-color: brown;
+    }
+}
+
+/* Animation for Border ends here */
+  
+@keyframes borderMove {
+    0% {
+        border-width: 2px;
+    }
+    50% {
+        border-width: 6px;
+    }
+    100% {
+        border-width: 2px;
+    }
+}
+
+.sol3-card {
+    flex: 0 1 calc(16.666% - 10px); /* Adjust the width and spacing for six cards in a row */
+    margin-bottom: 10px; /* Adjust the margin */
+    overflow: hidden;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 8px;
+    
+}
+
+.sol3-card:hover {
+    flex: 0 1 calc(16.666% - 10px); /* Adjust the width and spacing */
+    border-radius: 8px;
+    margin-bottom: 10px; /* Adjust the margin */
+    overflow: hidden;
+    animation: borderAnimation 1s infinite, borderMove 1s infinite; /* Apply both animations */
+    /* background-color: #8346ff; */
+    color: white;
+}
+
+.sol3-card:hover p {
+    color: white; /* Change paragraph color to white on hover */
+}
+
+.sol3-card img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+  
+.cardrs3-content {
+    padding: 15px;
+}
+  
+.sol3-card .cardrs2content {
+    color: black;
+    font-weight: 600;
+    
+}
+  
+.sol3-card h3 {
+    margin-top: 0;
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    text-align: center;
+}
+  
+.newsdate {
+    color: #777;
+    font-size: 0.8rem;
+}
+  
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .cardrs3-container {
+        width: 100%;
+        margin: 0px;
+    }
+    .cardrs3-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sol3-card {
+        flex: 0 1 calc(100% - 10px); /* Full width with margin adjustment */
+    }
+    .sol3-card img{
+        display: none;
+      }
+      .cardrs3-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+      }
+      .sol3-card h3 { /*Text inside Unordered list  */
+        margin: 0;
+        color: white;
+        text-decoration: none;
+        font-size: small;
+      }
+}

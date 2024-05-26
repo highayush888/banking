@@ -1,0 +1,65 @@
+.second-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap to the next row on smaller screens */
+    background-color: #c2bcff;
+  }
+  
+  .secondleft-content {
+    flex: 1; /* This makes both columns take equal width */
+    padding: 20px; /* Add padding for spacing */
+    border: 1px solid #ccc; /* Add border for visualization */
+    box-sizing: border-box; /* Include padding and border in the column width */
+    display: flex; /* Enable flexbox for centering */
+    flex-direction: column; /* Stack items vertically in each column */
+    /* align-items: center; Center content horizontally */
+  }
+
+  .secondright-content {
+    flex: 1; /* This makes both columns take equal width */
+    padding: 20px; /* Add padding for spacing */
+    border: 1px solid #ccc; /* Add border for visualization */
+    box-sizing: border-box; /* Include padding and border in the column width */
+    display: flex; /* Enable flexbox for centering */
+    flex-direction: column; /* Stack items vertically in each column */
+    /* align-items: center; Center content horizontally */
+    
+  }
+
+ 
+  /* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .second-container {
+    flex-direction: column; /* Change to a column layout on small screens */
+  }
+
+  .secondleft-content,
+  .secondright-content {
+    flex: 1; /* Full width for small screens */
+    margin-bottom: 20px; /* Add some spacing between columns */
+  }
+}
+
+@media (max-width: 480px) {
+  .top-links {
+    flex-direction: column; /* Stack links vertically on extra small screens */
+  }
+
+  .top-links a {
+    margin: 10px 0; /* Adjust spacing for links on extra small screens */
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .containerlayout {
+    flex-direction: column; /* Change to a column layout on small screens */
+  }
+
+  .ecolumn1,
+  .ecolumn2 {
+    flex: 1; /* Full width for small screens */
+    margin-bottom: 20px; /* Add some spacing between columns */
+  }
+}
+
+ 

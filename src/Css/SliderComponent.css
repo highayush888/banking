@@ -1,0 +1,12 @@
+.nidhiimg{
+    height: 300px;
+    width: 800px;
+    border-radius: 20px;
+}
+@media only screen and (max-width:700px){
+    .nidhiimg{
+        height: 200px;
+        width: auto;
+        border-radius: 20px;
+    }
+}

@@ -1,0 +1,43 @@
+/* Main Button styles */
+.btn {
+    position: relative; /* Ensure the button is positioned relatively for absolute positioning of pseudo-element */
+    display: inline-block;
+    padding: 20px 50px;
+    margin: 50px 10px;
+    overflow: hidden;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-decoration: none;
+    border: 4px solid #FFF;
+    background-color: rgba(0, 0, 0, .34);
+    border-radius: 100px;
+    box-shadow: inset 4px 4px 0px 0px rgba(50, 50, 50, 0.75);
+    transition: background-position .75s ease;
+  }
+  
+  /* Style for when the user hovers the button */
+  .btn:hover {
+    background-position: 100% 50%;
+  }
+  
+  /* Liquid fill animation */
+  .btn::after {
+    content: ''; /* Create the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blue; /* Adjust the color of the liquid */
+    opacity: 0; /* Initially hidden */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out, opacity 1s ease-in-out; /* Adjust the transition properties */
+  }
+  
+  .btn:hover::after {
+    transform: scaleX(1);
+    opacity: 0.5; /* Adjust the opacity of the liquid */
+  }
+  

@@ -1,0 +1,19 @@
+
+
+.flex{
+    text-decoration: none;
+    align-items: center;
+}
+
+.flex:hover li{
+    color:blue
+}
+
+.text-sm{
+   margin-left: 17%;
+}
+
+.inline-flex{
+    width:40%;
+    padding: 0 !important;
+}

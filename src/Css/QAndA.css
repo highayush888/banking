@@ -1,0 +1,62 @@
+/* QAndA.css */
+
+.q-and-a-container {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 80px;
+}
+
+.header-container{
+  /* display: flex; */
+}
+
+.q-and-a-container h1{
+  font-size: 4em;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px; /* Added gap between buttons for better spacing */
+  margin-left: 950px;
+  
+}
+
+.q-and-a-container button {
+  padding: 10px;
+  background-color: #f7f7f0; /* Updated button background color */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.q-and-a-container button:hover {
+  background-color: black; /* Adjusted hover background color */
+  color: white;
+}
+
+.question {
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.question-header {
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-header h3 {
+  margin: 0;
+}
+
+.answer {
+  padding: 10px;
+  background-color: white;
+  /* border-top: 1px solid #ccc; */
+  color: black;
+}

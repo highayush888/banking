@@ -1,0 +1,66 @@
+.header-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+
+}
+
+.centered-content {
+  background-color: rgba(0, 150, 163, 0.5);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.head-text {
+  color: white;
+  font-size: 3.5em;
+  font-weight: bolder;
+  /* margin-bottom: 0.5em;  */
+}
+
+.subhead-text {
+  color: white;
+  font-size: 2em;
+  font-weight: normal;
+  margin-top: 0.5em; /* Remove any default margin-top */
+  margin-bottom: 1em; /* Add margin for spacing */
+}
+
+.hire-btn {
+  background-color: transparent;
+  border-radius: 40px;
+  border: 3px solid #ef5a16;
+  font-size: 1.5em;
+  padding: 10px 40px; /* Adjust padding to your liking */
+  color: white;
+  cursor: pointer;
+}
+
+.hire-btn:hover {
+  background-color: #ef5a16;
+}
+
+@media only screen and (max-width: 700px) {
+  .head-text {
+    font-size: 2.5em; /* Adjust font size for smaller screens */
+  }
+
+  .subhead-text {
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+
+  .hire-btn {
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+  }
+}

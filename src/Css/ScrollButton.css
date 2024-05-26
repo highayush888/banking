@@ -1,0 +1,21 @@
+/* ScrollButton.css */
+
+.scroll-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1237ab; /* Adjust background color as needed */
+    color: #fff; /* Adjust text color as needed */
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px ;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 17;
+  }
+  
+  .scroll-button:hover {
+    background-image: linear-gradient(to right,#8314af 0%,#1c368d 51%,#232189 100%);
+    color:white;
+  }
+  

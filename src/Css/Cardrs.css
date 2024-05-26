@@ -1,0 +1,129 @@
+/* LatestNewsCards.css */
+
+.cardrs0-container {
+    max-width: 100%;
+    margin: 40px;
+  }
+  
+  .cardrs0-container h2 {
+    font-size: 3em;
+  }
+  
+  .cardrs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+  }
+
+  /* Animation for Border starts here */
+  @keyframes borderAnimation {
+    0% {
+      border-color: green;
+    }
+    50% {
+      border-color: red;
+    }
+    100% {
+      border-color: brown;
+    }
+  }
+
+  /* Animation for Border ends here */
+  
+  @keyframes borderMove {
+    0% {
+      border-width: 2px;
+    }
+    50% {
+      border-width: 6px;
+    }
+    100% {
+      border-width: 2px;
+    }
+  }
+  .serv-card{
+    flex: 0 1 calc(20% - 5px); /* Adjust the width and spacing */
+    border-radius: 8px;
+    margin-bottom: 10px; /* Adjust the margin */
+    overflow: hidden;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+    box-shadow: 2px 2px 8px black;
+    color: black;
+  }
+  
+  .serv-card:hover{
+    flex: 0 1 calc(20% - 5px); /* Adjust the width and spacing */
+    border-radius: 8px;
+    margin-bottom: 10px; /* Adjust the margin */
+    overflow: hidden;
+    /* border: 2px solid #ccc; */
+    /* border-color: 2px solid red; */
+    animation: borderAnimation 1s infinite;
+    animation: borderMove 1s infinite;
+    /* background-color: #8346ff; */
+    color:white
+  }
+  
+  .serv-card:hover p {
+    color: white; 
+  }
+
+  .serv-card img {
+    width: 100%;
+    height: auto;
+    /* border-bottom: 1px solid #ccc; */
+    padding:20px;
+  }
+  
+  .card-link{
+    text-decoration: none;
+  }
+  
+  .cardrs-content {
+    padding: 15px;
+    color: black;
+  }
+  
+  .serv-card .cardrscontent {
+    color: black;
+    font-weight: 600;
+  }
+  
+  /* .serv-card h3 {
+    margin-top: 0;
+    text-decoration: underline;
+  } */
+  
+  .newsdate {
+    color: #777;
+    font-size: 0.8rem;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .cardrs-wrapper {
+      flex-direction: column;
+    }
+  
+    .serv-card {
+      flex: 0 1 calc(100% - 10px); /* Full width with margin adjustment */
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .cardrs-wrapper {
+      flex-direction: row;
+    }
+  
+    .serv-card {
+      flex: 0 1 calc(100% - 10px); /* Full width with margin adjustment */
+    }
+  }
+
+  /*  */
+
+
+  /*  */

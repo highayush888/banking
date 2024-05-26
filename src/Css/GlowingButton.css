@@ -1,0 +1,38 @@
+/* GlowingButton.css */
+
+.glowing-container {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #fff; /* Set your desired border style */
+  background-color: black;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.glowing-container::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  opacity: 0;
+  animation: sparkAnimation 1.5s infinite linear;
+  box-sizing: border-box;
+}
+
+@keyframes sparkAnimation {
+  0%, 100% {
+    background: linear-gradient(to right, transparent 20%, green 30%, transparent 70%);
+    background-size: 200% 100%;
+    transform: translateX(0);
+    opacity: 0;
+  }
+  50% {
+    background: linear-gradient(to right, transparent 20%, green 30%, transparent 70%);
+    background-size: 200% 100%;
+    transform: translateX(100%);
+    opacity: 1;
+  }
+}

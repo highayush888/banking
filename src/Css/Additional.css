@@ -1,0 +1,160 @@
+.container-add {    
+
+  color: white;
+  position: relative;
+  font-family: sans-serif;
+  /* background-color: black; */
+  /* background-image: url('/public/alter.png');  */
+  background-image: url('/public/page.png'); 
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the heading horizontally */
+  justify-content: center; /* Center the heading vertically */
+
+  }
+  
+
+  
+  .cards-add-container {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+   
+    
+  }
+  
+ .add-text{
+  color: white;
+  background-color: #0202a7;
+  width:100%;
+  text-align: center;
+ } 
+
+.box-add {
+  margin: 10px;
+  padding: 20px;
+  width: calc(25% - 20px); /* Adjust width as needed */
+  /* width: 250px; */ /* Adjust width as needed */
+  height: 330px; /* Adjust height as needed */
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 0.7rem;
+  transition: all ease 0.3s;
+  /* background-color: black; */
+  flex-direction: row;
+}
+
+  /* .box-add:hover {
+    box-shadow: 0px 0px 20px 1px #ffbb763f;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+  }
+  
+  .title-add {
+    font-size: 1.5rem; 
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+  
+  .box-add > div {
+    margin-top: auto; 
+  }
+   */
+
+  /* Additonal css */
+
+  .container-add::before,
+  .container-add::after {
+    content: "";
+    background-color: #fab5704c;
+    position: absolute;
+  }
+  
+  .container-add::before {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    top: 30%;
+    right: 7%;
+  }
+  
+  .container-add::after {
+    content: "";
+    position: absolute;
+    height: 3rem;
+    top: 8%;
+    right: 5%;
+    border: 1px solid;
+  }
+  
+  .container-add {
+    /* width: 11.875em;
+    height: 15.875em; */
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.074);
+    /* background-color: black; */
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 0.7rem;
+    transition: all ease 0.3s;
+  }
+
+  /* Same as above for container-add */
+  .box-add {
+    width: 11.875em;
+    height: 15.875em;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.074);
+    /* background-color: black; */
+    /* background-image: linear-gradient(to right,#8314af 0%,#1c368d 51%,#232189 100%); */
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 0.7rem;
+    transition: all ease 0.3s;
+  }
+  
+  .container-add .box-add {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .container-add .box-add .title-add {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+  
+  .container-add .box-add div strong {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .container-add .box-add div p {
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+  }
+  
+  .container-add .box-add div span {
+    font-size: 0.7rem;
+    font-weight: 300;
+  }
+  
+  .container-add .box-add div span:nth-child(3) {
+    font-weight: 500;
+    margin-right: 0.2rem;
+  }
+  
+  .container-add .box-add:hover {
+    box-shadow: 0px 0px 20px 1px #0202a7;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+  }
+  

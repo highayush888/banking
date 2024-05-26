@@ -1,0 +1,39 @@
+
+    
+
+.spec2-conatainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .spec2-left,
+  .spec2-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .spec2-pics {
+    width: 200px;
+    height: auto; 
+    margin: 5px; 
+    /* border: 2px solid black; */
+    /* border-radius: 50%; */
+}
+  
+.spec2-pics-left {
+    width: 200px;
+    height: auto; 
+    margin: 5px; 
+    border: 2px solid grey;
+    border-radius: 20%;
+}
+
+.spec2-pics-right{
+    width: 200px;
+    height: auto; 
+    margin: 5px; 
+    border: 2px solid grey;
+    border-radius: 20%;  
+}

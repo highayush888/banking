@@ -1,0 +1,31 @@
+/* Aboutus.css */
+
+.aboutus-container {
+    display: flex;
+    padding: 2rem;
+    background-color: #dcdbff;
+    /* background-image: url('/public/q.svg'); */
+    background-image: url('/public/blob.svg'); 
+  }
+  
+ 
+  .left-aboutus {
+    flex: 1;
+    padding-right: 1rem; /* Add padding for spacing */
+  }
+  
+  .right-aboutus {
+    flex: 1;
+    padding-left: 1rem; /* Add padding for spacing */
+  }
+
+  .ty{
+    background-color: black;
+    color:white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  

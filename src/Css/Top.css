@@ -1,0 +1,91 @@
+/* Top.css */
+
+.top-container {
+  display: flex;
+  flex-direction: column; /* Change to column for mobile layout */
+  background-color: #ffffff;
+}
+
+.left-part {
+  padding: 15px; /* Adjust padding for mobile layout */
+  color: black;
+  font-size: 1em; /* Adjust font size for mobile layout */
+  text-align: center; /* Center text for mobile layout */
+}
+
+.right-part {
+  padding: 15px;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+}
+
+.toptext {
+  color: #777775;
+}
+
+.topbtn {
+  background-color: #000;
+  color: white;
+  border-radius: 5px;
+  padding: 15px;
+  transition: background-color 0.3s; /* Smooth transition on background color change */
+}
+
+.topbtn:hover {
+  background-color: #cdf683; /* Change to green on hover */
+  color: #000;
+}
+
+.icon-text-1 {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Align items vertically in the center */
+  justify-content: center;
+}
+
+.icon-text-1 > * {
+  margin-right: 5px; /* Add margin between icon and text */
+}
+
+/* Animation for h1 and p starts */
+
+.tracking-in-contract {
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+/* Adjustments for mobile layout */
+@media (max-width: 768px) {
+  .right-part {
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .left-part {
+    padding: 15px; /* Adjust padding for mobile layout */
+    font-size: 1.2em; /* Adjust font size for mobile layout */
+  }
+
+  .top-head {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .top-para {
+    font-weight: 100;
+    margin: 0px;
+    text-align: center;
+    font-size: 20px;
+  }
+}

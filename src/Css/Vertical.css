@@ -1,0 +1,49 @@
+.vertical-container {
+    display: flex;
+  }
+  
+  .left-vertical,
+  .right-vertical {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .vertical-img img {
+    max-width: 50%;
+    height: auto;
+    margin-left: 365px;
+    
+  }
+  
+  /* Vertical container styles */
+.vertical-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    padding: 20px;
+  }
+  
+  /* Left vertical part styles */
+  .left-vertical {
+    max-width: 400px; /* Set a maximum width for the left part */
+    text-align: center; /* Align text to the center */
+  }
+  
+  .left-vertical p {
+    margin-bottom: 20px; /* Add some bottom margin between paragraphs */
+  }
+  
+  .left-vertical button {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Add some padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Add pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .left-vertical button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

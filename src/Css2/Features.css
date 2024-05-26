@@ -1,0 +1,27 @@
+.feat-container {
+    display: flex;
+    padding: 2rem;
+    background-color: yellow;
+  }
+  
+ 
+  .left-feat {
+    flex: 1;
+    padding-right: 1rem; /* Add padding for spacing */
+  }
+  
+  .right-feat {
+    flex: 1;
+    padding-left: 1rem; /* Add padding for spacing */
+  }
+
+  .ty{
+    background-color: black;
+    color:white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
